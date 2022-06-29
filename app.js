@@ -14,16 +14,16 @@ const createSlide = () => {
     let h1 = document.createElement('h1');
     let p = document.createElement('p');
     
-    // let h1Name = document.createElement('h1');
+    let h1Name = document.createElement('h1');
 
     imgElement.appendChild(document.createTextNode(''));
     
     h1.appendChild(document.createTextNode(movies[index].Name));
-    // h1Name.appendChild(document.createTextNode(movies[index].Name))
+    h1Name.appendChild(document.createTextNode(movies[index].Name))
     p.appendChild(document.createTextNode(movies[index].des));
     
     content.appendChild(h1); 
-    // content.append(h1Name);
+    content.append(h1Name);
     content.appendChild(p);
 
     slide.appendChild(content);
@@ -36,7 +36,7 @@ const createSlide = () => {
     slide.className = 'slider';
     content.className = 'slideContent';
     h1.className = 'Name';
-    // h1Name.className = 'Name';
+    h1Name.className = 'Name';
     p.className = 'des';
 
     sliders.push(slide);
